@@ -46,7 +46,7 @@ body {
 
     display: grid;
     grid-template-rows: min-content 1fr;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* to make image work easier */
@@ -191,6 +191,12 @@ button {
         align-items: end;
     }
 }
+
+
+
+
+
+
 
 .sr-only {
     position: absolute;
@@ -418,7 +424,9 @@ button {
     padding: var(--underline-gap, 1rem) 0;
     border: 0;
     border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
+    color: hsl(var(--clr-white) / .75);
     transition: all 200ms ease-in-out;
+    background-color: transparent;
 }
 
 .underline-indicators > *:hover,
@@ -430,6 +438,13 @@ button {
 .underline-indicators > [aria-selected="true"] {
     color: hsl( var(--clr-white) / 1);
     border-color: hsl( var(--clr-white) / 1);
+}
+
+@media (max-width: 35em) {
+    .underline-indicators > .active {
+        color: hsl( var(--clr-white) / 1);
+        border-color: hsl( var(--clr-white) / 0);
+    }
 }
 
 /* 4. Dot-indicators */
@@ -510,4 +525,57 @@ body {
     .home {
         background-image: url(../assets/home/background-home-desktop.jpg);
     }
+}
+
+/* ---------------------- */
+/* Page-specific          */
+/* ---------------------- */
+
+/* destination */
+
+.moon-image {
+    width: 170px;
+    aspect-ratio: 1;
+    margin-top: 2rem;
+}
+
+@media (min-width: 35em) {
+    .moon-image {
+        width: 300px;
+    }
+}
+
+.destination {
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background: url(../assets/destination/background-destination-tablet.jpg);
+}
+
+@media (min-width: 35em) {
+    .destination {
+        background: url(../assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: 45em) {
+    .destination {
+        background-position: right center;
+        background: url(../assets/destination/background-destination-desktop.jpg);
+    }
+}
+
+.grid-container--destination {
+    display: grid;
+    text-align: center;
+    place-items: start;
+    padding-inline: 1rem;
+    grid-template-rows: repeat(4, fit-content);
+    row-gap: 1.5rem;
+    margin: 1.3rem 0 0.7rem;
+} 
+
+.grid-container--destination * {
+    margin-inline: auto;
+    max-width: 50ch;
 }

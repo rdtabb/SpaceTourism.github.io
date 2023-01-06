@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../starter-code/styles/style.css">
+  <link rel="icon" type="image/png" href="../starter-code/assets/favicon-32x32.png">
+</head>
+
+<html>
+<body class="destination">
+    <header class="primary-header flex">
+        <div>
+          <img src="assets/shared/logo.svg" alt="" class="logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./index.html"><span aria-hidden="true">00</span> Home</a></li>
+              <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#"><span aria-hidden="false">01</span> Destination</a></li>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew-commander.html"><span aria-hidden="true">02</span> Crew</a></li>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology-vehicle.html"><span aria-hidden="true">03</span> Technology</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="grid-container--destination">
+        <div class="first-child">
+          <h1 class="numbered-title position"> 
+            <span>01</span>Pick your destination 
+          </h1>
+          <img class="moon-image" src="./assets/destination/image-moon.png" alt="">
+        </div>
+
+        <div class="second-child underline-indicators flex">
+            <button aria-selected="true" class="letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Moon</button>
+            <button aria-selected="false" class="letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Mars</button>
+            <button aria-selected="false" class="letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Europa</button>
+            <button aria-selected="false" class="letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Moon</button>
+        </div>
+
+        <div class="third-child">
+            <p class="ff-serif fs-800 uppercase">Moon</p>
+            <p class="ff-sans-norm fs-400 text-accent">
+                See our planet as you’ve never seen it before. 
+                A perfect relaxing trip away to help regain perspective and come back refreshed. 
+                While you’re there, take in some history by visiting the Luna 2 and Apollo 11 
+                landing sites.
+            </p>
+        </div>
+
+        <div class="fourth-child">
+            <p class="uppercase ff-sans-cond letter-spacing-3 fs-200 text-accent" style="margin-bottom: 0.5rem;">avg. distance</p>
+            <p class="uppercase ff-serif" style="font-size: 1.75rem; margin-bottom: 1rem;">384.400 km</p>
+            <p class="uppercase ff-sans-cond letter-spacing-3 fs-200 text-accent" style="margin-bottom: 0.5rem;">est. travel time</p>
+            <p class="uppercase ff-serif" style="font-size: 1.75rem;">3 days</p>
+        </div>
+      </main>
+      <script src="../starter-code/script.js"></script>
+</body>
+</html>
