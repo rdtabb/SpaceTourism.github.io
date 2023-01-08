@@ -139,6 +139,10 @@ button {
     display: block;
 }
 
+.d-none {
+    display: none;
+}
+
 .flow > *:where(:not(:first-child)) {
     margin-top: 1rem;
 }
@@ -591,6 +595,8 @@ body {
         column-gap: var(--container-gap, 2rem);
         grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
         text-align: left;
+        padding-bottom: 6rem;
+        align-items: end;
     }
 
     .grid-container--destination * {
@@ -602,12 +608,7 @@ body {
         grid-column: 2;
     }
     
-    .grid-container > *:last-child {
+    .grid-container--destination > *:last-child {
         grid-column: 3;
-    }
-
-    .grid-container--destination {
-        padding-bottom: 6rem;
-        align-items: end;
     }
 }
