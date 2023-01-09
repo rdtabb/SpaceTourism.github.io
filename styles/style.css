@@ -643,6 +643,8 @@ body {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 @media (min-width: 35em) {
@@ -739,7 +741,7 @@ body {
     }
 
     .commander-image {
-        height: 572px;
+        height: 400px;
         align-self: end;
         border: none;
     }
@@ -754,6 +756,7 @@ body {
         ;
     
         margin: 2rem 0 0 0;
+        overflow: hidden;
     }
     
     .grid-container--crew > .numbered-title {
@@ -778,12 +781,22 @@ body {
     }
 
     .commander-image {
-        height: 572px;
+        height: min(60vw, 540px);
         align-self: end;
         border: none;
     }
 
     .crew-info__title {
+        margin: 0;
+    }
+
+    .crew-info__name {
+        display: block;
+        margin: 0;
+    }
+
+    .crew-info__text {
+        max-width: 45ch;
         margin: 0;
     }
 
