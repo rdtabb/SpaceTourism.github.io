@@ -8,6 +8,7 @@ tabs.forEach((tab) => {
 function changeTabPanel(e) {
     const targetTab = e.target;
     const targetPanel = targetTab.getAttribute("aria-controls");
+    const targetImage = targetTab.getAttribute("data-image")
 
     const tabContainer = targetTab.parentNode;
     const mainContainer = tabContainer.parentNode
@@ -17,6 +18,8 @@ function changeTabPanel(e) {
 
     mainContainer.querySelector(`#${targetPanel}`).removeAttribute('hidden')
 
+    mainContainer.querySelectorAll('.moon-image').forEach((image) =>
+        image.classList.add('hidden'))
 
-    console.log(mainContainer)
+    mainContainer.querySelector(`#${targetImage}`).classList.remove('hidden')
 }

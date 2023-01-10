@@ -488,6 +488,10 @@ body {
 
 /* grid-container */
 
+.hidden {
+    display: none;
+}
+
 .grid-container {
     display: grid;
     text-align: center;

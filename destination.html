@@ -60,17 +60,17 @@
     </picture> -->
 
 
-    <img hidden class="moon-image" src="./assets/destination/image-moon.png" alt="the planet moon">
-    <img hidden class="moon-image" src="./assets/destination/image-mars.png" alt="the planet mars">
-    <img hidden class="moon-image" src="./assets/destination/image-europa.png" alt="the europa moon">
-    <img hidden class="moon-image" src="./assets/destination/image-titan.png" alt="the titan moon">
+    <img id="moon-image" class="moon-image" src="./assets/destination/image-moon.png" alt="the planet moon">
+    <img id="mars-image" class="moon-image hidden" src="./assets/destination/image-mars.png" alt="the planet mars">
+    <img id="europa-image" class="moon-image hidden" src="./assets/destination/image-europa.png" alt="the europa moon">
+    <img id="titan-image" class="moon-image hidden" src="./assets/destination/image-titan.png" alt="the titan moon">
 
 
     <div class="tab-list underline-indicators flex" role="tablist">
-      <button aria-selected="true" role="tab" aria-controls="moon-tab" class="button-one letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Moon</button>
-      <button aria-selected="false" role="tab" aria-controls="mars-tab" class="button-two letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Mars</button>
-      <button aria-selected="false" role="tab" aria-controls="europa-tab" class="button-three letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Europa</button>
-      <button aria-selected="false" role="tab" aria-controls="titan-tab" class="button-four letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Titan</button>
+      <button aria-selected="true" role="tab" aria-controls="moon-tab" data-image="moon-image" class="button-one letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Moon</button>
+      <button aria-selected="false" role="tab" aria-controls="mars-tab" data-image="mars-image" class="button-two letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Mars</button>
+      <button aria-selected="false" role="tab" aria-controls="europa-tab" data-image="europa-image" class="button-three letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Europa</button>
+      <button aria-selected="false" role="tab" aria-controls="titan-tab" data-image="titan-image" class="button-four letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Titan</button>
     </div>
 
     <article class="destination-info" id="moon-tab" role="tabpanel">
