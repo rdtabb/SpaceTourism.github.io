@@ -21,7 +21,7 @@ function changeTabPanel(e) {
     showContent(mainContainer, `#${targetPanel}`)
 
     //functions for hiding and showing images
-    hideContent(mainContainer, '.moon-image')
+    hideContent(mainContainer, '.commander-image')
     showContent(mainContainer, `#${targetImage}`)
 }
 

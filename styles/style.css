@@ -492,6 +492,10 @@ body {
     display: none;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 .grid-container {
     display: grid;
     text-align: center;
