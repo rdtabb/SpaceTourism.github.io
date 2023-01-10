@@ -502,19 +502,19 @@ body {
 
 /* destination */
 
-.moon-image {
+.grid-container--destination > img {
     width: 170px;
     aspect-ratio: 1;
 }
 
 @media (min-width: 35em) {
-    .moon-image {
+    .grid-container--destination > img {
         width: 300px;
     }
 }
 
 @media (min-width: 45em) {
-    .moon-image {
+    .grid-container--destination > img {
         min-width: 80%;
     }
 }
