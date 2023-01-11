@@ -42,18 +42,19 @@
     <h1 class="numbered-title">
         <span>03</span>SPACE LAUNCH 101
     </h1>
-
-    <div class="technology-image">
-    </div>
     
+    <!-- <picture class="technology-image">
+      <source media="(max-width: 45em)" srcset="./assets/technology/image-launch-vehicle-landscape.jpg">
+      <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+    </picture> -->
 
-    <div class="number-indicators">
-        <button aria-selected="true" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>1</button>
-        <button aria-selected="false" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>2</button>
-        <button aria-selected="false" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>3</button>
+    <div class="number-indicators" role="tablist">
+        <button aria-selected="true" role="tab" aria-controls="vehicle-tab" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>1</button>
+        <button aria-selected="false" role="tab" aria-controls="spaceport-tab" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>2</button>
+        <button aria-selected="false" role="tab" aria-controls="capsule-tab" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>3</button>
     </div>
 
-    <article class="technology-info" role="tabpanel" id="commander-tab">
+    <article class="technology-info" role="tabpanel" id="vehicle-tab">
         <h2 class="technology-info__title ff-serif uppercase fs-600 text-accent">THE TERMINOLOGY…</h2>
 
         <p class="technology-info__name ff-serif uppercase fs-700">LAUNCH VEHICLE</p>
@@ -65,8 +66,36 @@
             Standing 150 metres tall, it's quite an awe-inspiring sight on the launch 
         </p>
     </article>
+
+    <article hidden class="technology-info" role="tabpanel" id="spaceport-tab">
+      <h2 class="technology-info__title ff-serif uppercase fs-600 text-accent">THE TERMINOLOGY…</h2>
+
+      <p class="technology-info__name ff-serif uppercase fs-700">SPACEPORT</p>
+
+      <p class="technology-info__text ff-sans-norm fs-400 text-accent">
+        A spaceport or cosmodrome is a site for launching (or receiving) 
+        spacecraft, by analogy to the seaport for ships or airport for aircraft.
+         Based in the famous Cape Canaveral, our spaceport is ideally 
+         situated to take advantage of the Earth’s rotation for launch. 
+      </p>
+  </article>
+
+  <article hidden class="technology-info" role="tabpanel" id="capsule-tab">
+    <h2 class="technology-info__title ff-serif uppercase fs-600 text-accent">THE TERMINOLOGY…</h2>
+
+    <p class="technology-info__name ff-serif uppercase fs-700">SPACE CAPSULE</p>
+
+    <p class="technology-info__text ff-sans-norm fs-400 text-accent">
+      A space capsule is an often-crewed spacecraft that uses a blunt-body 
+      reentry capsule to reenter the Earth's atmosphere without wings. 
+      Our capsule is where you'll spend your time during the flight. 
+      It includes a space gym, cinema, and plenty of other
+      activities to keep you entertained. 
+    </p>
+</article>
 </main>
   <script src="./script.js"></script>
+  <script src="./technology.js"></script>
 </body>
 
 </html>
