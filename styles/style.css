@@ -282,6 +282,17 @@ button {
 /* Components             */
 /* ---------------------- */
 
+/* smooth page transitions */
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
 /* custom cursor */
 
 .cursor {
