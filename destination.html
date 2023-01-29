@@ -45,10 +45,10 @@
       <span>01</span>Pick your destination
     </h1>
 
-    <img id="moon-image" class="moon-image" src="./assets/destination/image-moon.png" alt="the planet moon">
-    <img id="mars-image" hidden class="moon-image" src="./assets/destination/image-mars.png" alt="the planet mars">
-    <img id="europa-image" hidden class="moon-image" src="./assets/destination/image-europa.png" alt="the europa moon">
-    <img id="titan-image" hidden class="moon-image" src="./assets/destination/image-titan.png" alt="the titan moon">
+    <img id="moon-image " class="moon-image" src="./assets/destination/image-moon.png" alt="the planet moon">
+    <img id="mars-image" hidden class="moon-image ease-fader" src="./assets/destination/image-mars.png" alt="the planet mars">
+    <img id="europa-image" hidden class="moon-image ease-fader" src="./assets/destination/image-europa.png" alt="the europa moon">
+    <img id="titan-image" hidden class="moon-image ease-fader" src="./assets/destination/image-titan.png" alt="the titan moon">
 
 
     <div class="tab-list underline-indicators flex" role="tablist">
@@ -58,7 +58,7 @@
       <button aria-selected="false" role="tab" aria-controls="titan-tab" data-image="titan-image" class="button-four letter-spacing-2 ff-sans-cond bg-dark text-white uppercase">Titan</button>
     </div>
 
-    <article class="destination-info" id="moon-tab" role="tabpanel">
+    <article class="destination-info fader" id="moon-tab" role="tabpanel">
       <h2 class="ff-serif fs-800 uppercase">Moon</h2>
 
       <p class="ff-sans-norm fs-400 text-accent">
@@ -85,7 +85,7 @@
     </article>
 
     <!-- Mars -->
-    <article hidden class="destination-info" id="mars-tab" role="tabpanel">
+    <article hidden class="destination-info fader" id="mars-tab" role="tabpanel">
       <h2 class="fs-800 uppercase ff-serif">Mars</h2>
 
       <p style="opacity: 0.8">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
@@ -105,7 +105,7 @@
     </article>
 
     <!-- Europa -->
-    <article hidden class="destination-info" id="europa-tab" role="tabpanel">
+    <article hidden class="destination-info fader" id="europa-tab" role="tabpanel">
       <h2 class="fs-800 uppercase ff-serif">Europa</h2>
 
       <p style="opacity: 0.8">The smallest of the four Galilean moons orbiting Jupiter, Europa is a
@@ -125,7 +125,7 @@
     </article>
 
     <!-- Titan -->
-    <article hidden class="destination-info" id="titan-tab" role="tabpanel">
+    <article hidden class="destination-info fader" id="titan-tab" role="tabpanel">
       <h2 class="fs-800 uppercase ff-serif">Titan</h2>
 
       <p style="opacity: 0.8">The only moon known to have a dense atmosphere other than Earth, Titan
@@ -145,9 +145,9 @@
     </article>
 
   </main>
-  <script src="./node_modules/swup/dist/swup.min.js"></script>
   <script src="./script.js"></script>
   <script src="./tabs.js"></script>
+  <script src="./intersection-observers.js"></script>
 </body>
 
 </html>

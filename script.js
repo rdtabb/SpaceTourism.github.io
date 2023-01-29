@@ -2,13 +2,6 @@ const nav = document.querySelector('.primary-navigation')
 const navToggle = document.querySelector('.mobile-nav-toggle')
 const mouseCursor = document.querySelector('.cursor')
 
-window.addEventListener('mousemove', cursor)
-
-function cursor(e) {
-    mouseCursor.style.top = e.pageY + "px";
-    mouseCursor.style.left = e.pageX +"px";
-}
-
 navToggle.addEventListener('click', () => {
     const visibility = nav.getAttribute("data-visible")
     if (visibility === 'false') {

@@ -1,15 +1,17 @@
-/* ---------------------- */
-/* Resets                 */
-/* ---------------------- */
+/* --------------------------- */
+/* 1 - Resets                  */
+/* --------------------------- */
 
-/* box-sizing reset */
+/* ...................... */
+/* 1.1 - box-sizing reset */
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
 
-/* reset margins */
+/* ...................... */
+/* 1.2 - reset margins    */
 body,
 h1,
 h2,
@@ -35,7 +37,8 @@ button {
     font-weight: 400;
 }
 
-/* reset body */
+/* ...................... */
+/* 1.3 - reset body       */
 body {
     font-family: var(--ff-sans-norm);
     font-size: var(--fs-400);
@@ -49,14 +52,15 @@ body {
     overflow-x: hidden;
 }
 
-/* to make image work easier */
+/* ...................... */
+/* 1.4 - images           */
 img,
 picture {
     max-width: 100%;
     display: block;
 }
-
-/* making forms easier */
+/* ...................... */
+/* 1.5 - making forms easy*/
 input,
 textarea,
 select,
@@ -64,7 +68,8 @@ button {
     font-family: inherit;
 }
 
-/* remove animations for people who do not want to have them */
+/* ...................... */
+/* 1.6 - remove anumations*/
 @media (prefers-reduced-motion: reduce) {
 
     *,
@@ -77,9 +82,9 @@ button {
     }
 }
 
-/* ---------------------- */
-/* Custom properties      */
-/* ---------------------- */
+/* --------------------------- */
+/* 2 - Custom properties       */
+/* --------------------------- */
 
 :root {
     --clr-dark: 230 35% 7%;
@@ -120,9 +125,9 @@ button {
     }
 }
 
-/* ---------------------- */
-/* Utility Classes        */
-/* ---------------------- */
+/* --------------------------- */
+/* 3 - Custom properties       */
+/* --------------------------- */
 
 /* general utility classes */
 
@@ -281,12 +286,6 @@ button {
 /* ---------------------- */
 /* Components             */
 /* ---------------------- */
-
-@media (max-width: 45em) {
-    .cursor {
-        display: none;
-    }
-}
 
 /* 1. Large button */
 
@@ -883,9 +882,9 @@ body {
 
 .technology {
     background: url(../assets/technology/background-technology-mobile.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position: top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 @media (min-width: 35em) {
@@ -932,23 +931,6 @@ body {
 .number-indicators>*:focus {
     border: 1px solid hsl(var(--clr-white));
 }
-
-
-
-/* image styling */
-
-/* .technology-image {
-    object-fit: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    aspect-ratio: 1.02;
-    place-self: center;
-    margin: 0;
-}
-
-.technology-image > img {
-    max-width: 100%;
-} */
 
 /* grid styling */
 
@@ -1043,4 +1025,25 @@ body {
     .technology-info>h2 {
         font-size: var(--fs-400);
     }
+}
+
+/* classes for intersection observers */
+
+.fader {
+    opacity: 0;
+    transform: translateY(5%);
+    transition: 
+        opacity 400ms ease, 
+        transform 400ms ease
+    ;
+}
+
+.ease-fader {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+.translated {
+    opacity: 1;
+    transform: translateY(0);
 }

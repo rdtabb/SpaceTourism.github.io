@@ -43,11 +43,6 @@
     <h1 class="numbered-title">
         <span>03</span>SPACE LAUNCH 101
     </h1>
-    
-    <!-- <picture class="technology-image">
-      <source media="(max-width: 45em)" srcset="./assets/technology/image-launch-vehicle-landscape.jpg">
-      <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="">
-    </picture> -->
 
     <div class="number-indicators" role="tablist">
         <button aria-selected="true" role="tab" aria-controls="vehicle-tab" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>1</button>
@@ -55,7 +50,7 @@
         <button aria-selected="false" role="tab" aria-controls="capsule-tab" class="bg-dark text-white ff-serif fs-600"><span class="sr-only">Section title</span>3</button>
     </div>
 
-    <article class="technology-info" role="tabpanel" id="vehicle-tab">
+    <article class="technology-info fader" role="tabpanel" id="vehicle-tab">
         <h2 class="technology-info__title ff-serif uppercase fs-600 text-accent">THE TERMINOLOGY…</h2>
 
         <p class="technology-info__name ff-serif uppercase fs-700">LAUNCH VEHICLE</p>
@@ -68,7 +63,7 @@
         </p>
     </article>
 
-    <article hidden class="technology-info" role="tabpanel" id="spaceport-tab">
+    <article hidden class="technology-info fader" role="tabpanel" id="spaceport-tab">
       <h2 class="technology-info__title ff-serif uppercase fs-600 text-accent">THE TERMINOLOGY…</h2>
 
       <p class="technology-info__name ff-serif uppercase fs-700">SPACEPORT</p>
@@ -81,7 +76,7 @@
       </p>
   </article>
 
-  <article hidden class="technology-info" role="tabpanel" id="capsule-tab">
+  <article hidden class="technology-info fader" role="tabpanel" id="capsule-tab">
     <h2 class="technology-info__title ff-serif uppercase fs-600 text-accent">THE TERMINOLOGY…</h2>
 
     <p class="technology-info__name ff-serif uppercase fs-700">SPACE CAPSULE</p>
@@ -97,6 +92,7 @@
 </main>
   <script src="./script.js"></script>
   <script src="./technology.js"></script>
+  <script src="./intersection-observers.js"></script>
 </body>
 
 </html>
