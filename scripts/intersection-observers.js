@@ -1,6 +1,5 @@
 const faders = document.querySelectorAll('.fader')
 const easeFaders = document.querySelectorAll('.ease-fader')
-console.log(faders)
 
 const sectionOptions = { }
 
